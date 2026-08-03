@@ -1,15 +1,17 @@
-import de.florianreuth.baseproject.*
+import de.florianreuth.baseproject.integration.configureTest
+import de.florianreuth.baseproject.setupProject
+import de.florianreuth.baseproject.setupPublishing
 
 plugins {
     `java-library`
-    id("me.champeau.jmh") version "0.7.3"
+    id("me.champeau.jmh")
     id("de.florianreuth.baseproject")
 }
 
 setupProject()
 setupPublishing()
 
-configureTestTasks()
+configureTest()
 
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.14.1"))
