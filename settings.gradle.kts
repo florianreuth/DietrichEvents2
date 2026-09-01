@@ -7,7 +7,7 @@ pluginManagement {
 
     plugins {
         id("me.champeau.jmh") version "0.7.3"
-        id("de.florianreuth.baseproject") version "3.0.0"
+        id("de.florianreuth.baseproject") version "3.0.2"
     }
 }
 
