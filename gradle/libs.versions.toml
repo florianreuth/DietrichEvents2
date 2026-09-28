@@ -1,0 +1,16 @@
+[versions]
+junit = "5.14.1"
+jmh = "1.37"
+
+[libraries]
+foojay-resolver-convention-plugin = { module = "org.gradle.toolchains.foojay-resolver-convention:org.gradle.toolchains.foojay-resolver-convention.gradle.plugin", version = "1.0.0" }
+# Versions of the JUnit artifacts below are managed by the BOM.
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+jmh-core = { module = "org.openjdk.jmh:jmh-core", version.ref = "jmh" }
+jmh-generator-annprocess = { module = "org.openjdk.jmh:jmh-generator-annprocess", version.ref = "jmh" }
+
+[plugins]
+jmh = { id = "me.champeau.jmh", version = "0.7.3" }
