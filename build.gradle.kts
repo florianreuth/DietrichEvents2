@@ -1,10 +1,6 @@
 plugins {
-    `java-library`
     alias(libs.plugins.jmh)
-    id("base.java")
-    id("base.maven_publish")
-    id("publishing.reposilite")
-    id("publishing.maven_central")
+    id("publishing.florianreuth")
     id("base.junit")
 }
 
